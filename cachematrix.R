@@ -1,7 +1,11 @@
 ## Put comments here that give an overall description of what your
 ## functions do
 
-## Write a short comment describing this function
+## makeCacheMAtrix provides the set of methods to set, get and setsolve and getsolve for matrix
+## set - sets the matrix content
+## get - gets the matrix content
+## setsolve - sets the solve(x) - inversion of the matrix
+## getsolve - gets the solved inverted matrix if is cached otherwise returns NULL
 
 makeCacheMatrix <- function(x = matrix()) {
         s <- NULL
