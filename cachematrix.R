@@ -34,7 +34,7 @@ cacheSolve <- function(x, ...) {
                 message("getting cached data") ## just information that stored version is being used
                 return(s) ## returning of inversion matrix already stored in makeCacheMatrix
         }
-        data <- x$get()   ## get the contect of matrix stored in makeCacheMatrix to variable data
+        data <- x$get()   ## get the content of matrix stored in makeCacheMatrix to variable data
         s <- solve(data)  ## actual calculation of inversion from variable data
         x$setsolve(s)     ## setting the chached value using makeCacheMatrix setsolve 
         s                 ## returnig of newly created inversion matrix
